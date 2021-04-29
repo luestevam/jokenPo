@@ -16,8 +16,8 @@ class _JogoState extends State<Jogo> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           //text
-          //imagem
-          //text resultado
+          //image
+          //text result
           // line 3 images
           Padding(
             padding: EdgeInsets.only(top: 32, bottom: 16),
@@ -30,8 +30,14 @@ class _JogoState extends State<Jogo> {
               )
             ),
           ),
+          GestureDetector(
+            onTap: (){print("Imagem clicada!");},
+            onDoubleTap: (){print("Dois clicada!");},
+            onLongPress: (){print("Longo!");},
+            child:  Image.asset("images/padrao.png"),
+          ),
 
-          Image.asset("images/padrao.png"),
+
           Padding(
               padding:EdgeInsets.only(top: 32, bottom: 16),
             child: Text(
